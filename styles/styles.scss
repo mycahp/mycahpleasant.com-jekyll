@@ -1,0 +1,57 @@
+---
+---
+
+$red: #C0392B;
+$purple: #674172;
+$blue: #2574A9;
+$turquoise: #53a1a3;
+$green: #34495E;
+$yellow: #F5D76E;
+$orange: #EB9532;
+
+$tabs-toggle-link-active-background-color: $blue;
+
+
+@import "bulma.sass";
+
+.center-title {
+    top: 50%;
+    position: relative;
+}
+
+#posts h2 {
+    color: $blue;    
+    text-decoration: underline;
+}
+
+.posts a, .footer a {
+    text-decoration: underline;
+}
+
+.posts a:link, .footer a:link {
+    color: $blue;
+}
+
+.posts a:visited, .footer a:visited {
+    color: $purple;
+}
+
+a:link {
+    color: $blue;
+}
+
+// a:visited {
+//     color: $purple;
+// }
+
+body {
+    border-top: 4px solid $yellow;
+}
+
+html {
+    border-top: 4px solid $blue;
+}
+
+.fade-in {
+    opacity: 0;
+}
