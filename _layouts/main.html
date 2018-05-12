@@ -1,0 +1,27 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    {% include head.html %}
+</head>
+<body>
+    <div class="section">
+        <div id="container" class="container">
+            <div class="columns">
+                <div class="column is-3 is-offset-1 is-hidden-mobile">
+                    {% include sidebar.html %}
+                </div>
+                <div class="column is-hidden-tablet">
+                    {% include sidebar-mobile.html %}
+                </div>
+                <div class="column is-6 is-offset-1 content" id="content">
+                    <br />
+                    {{content}}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include footer.html %}
+</body>
+</html>
