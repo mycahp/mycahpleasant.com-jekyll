@@ -3,8 +3,17 @@ layout: main
 title: Software Developer and Technology Enthusiast
 ---
 
-{% for post in site.posts limit:10%}
+{% for post in paginator.posts %}
 <p class="is-size-5">
     <a href="{{post.url}}" style="text-decoration: underline;">{{post.title}}</a> - {{ post.date | date: '%B %d, %Y' }}
 </p>
 {% endfor %}
+
+<nav class="pagination" role="navigation" aria-label="pagination">
+    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="pagination-previous">Previous</a>
+    {% endif %}
+    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="pagination-next">Next</a>
+    {% endif %}
+</nav>

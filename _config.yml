@@ -22,6 +22,9 @@ url: "https://mycahpleasant.com" # the base hostname & protocol for your site, e
 #twitter_username: 
 github_username: hacym
 
+paginate: 10
+paginate_path: "/page:num/"
+
 sass:
   sass_dir: _sass
 # Build settings
@@ -30,6 +33,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-gist
+  - jekyll-paginate
 
 highlighter: rouge
 
