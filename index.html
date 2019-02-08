@@ -3,11 +3,15 @@ layout: main
 title: Software Developer and Technology Enthusiast
 ---
 
-{% for post in paginator.posts %}
-<p class="is-size-5">
-    <a href="{{post.url}}" style="text-decoration: underline;">{{post.title}}</a> - {{ post.date | date: '%B %d, %Y' }}
-</p>
-{% endfor %}
+<div class="container justify-content-center">
+    <div class="col-8 offset-2 text-center">
+        {% for post in paginator.posts %}
+        <h5>
+            <a href="{{post.url}}" style="text-decoration: underline;">{{post.title}}</a> - {{ post.date | date: '%B %d, %Y' }}
+        </h5>
+        {% endfor %}
+    </div>
+</div>
 
 <nav class="pagination" role="navigation" aria-label="pagination">
     {% if paginator.previous_page %}

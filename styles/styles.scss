@@ -1,14 +1,63 @@
 ---
 ---
+@media (max-width: 575.98px) {
+    #name {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #name {
+        margin-top: 25px;
+    }
+}
 
 body {
     font-family: 'Arvo', serif;
-    border-top: 5px solid #345D86;
+    //border-top: 5px solid #345D86;
 }
+
 
 .input-wrapper {
     padding: 5px 5px 5px 0px;
 }
+
+#header {
+    width: 100%;
+}
+
+#name {
+    display: flex;
+    flex-direction: row;
+}
+
+#name h1 {
+    font-size: 2em;
+}
+
+#menu {
+    background-color:  #345D86;
+    color: white;
+    padding: 8px;
+}
+
+#menu a {
+    color: white;
+}
+
+#content {
+    margin-top: 25px;
+}
+
+#footer {
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+#title {
+    text-decoration: underline;
+}
+
 
 .post-action {
     padding: 5px 0px 0px 0px;
