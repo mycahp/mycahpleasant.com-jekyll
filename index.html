@@ -4,11 +4,18 @@ title: Software Developer and Technology Enthusiast
 ---
 
 <div class="container justify-content-center">
-    <div class="col-8 offset-2 text-center">
+    <div class="col-10 offset-1">
         {% for post in paginator.posts %}
-        <h5>
-            <a href="{{post.url}}" style="text-decoration: underline;">{{post.title}}</a> - {{ post.date | date: '%B %d, %Y' }}
-        </h5>
+            <div class="row">
+                <div class="col-md-8 col-xs-12 text-md-left text-sm-center text-center">
+                    <h5>
+                        <a href="{{post.url}}" style="text-decoration: underline;">{{post.title}}</a> 
+                    </h5>
+                </div>
+                <div class="col-md-3 offset-md-1 col-xs-12 text-md-right text-sm-center text-center">
+                    {{ post.date | date: '%B %d, %Y' }}
+                </div>
+            </div>
         {% endfor %}
     </div>
 </div>
