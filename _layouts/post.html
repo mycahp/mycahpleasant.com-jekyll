@@ -1,7 +1,7 @@
 ---
 layout: main
 ---
-<div class="text-center">
+<div class="text-center col-md-8 offset-md-2 col-lg-10 offset-lg-1">
     <h2 id="title">{{page.title}}</h2>
     <!--
     {% if page.show_author %}
@@ -11,13 +11,15 @@ layout: main
     <p>{{ page.date | date: '%B %d, %Y' }}</p>
 </div>
 <br />
-<div class="col-md-10 offset-md-1">
+<div class="col-sm-12 col-md-10 offset-md-1">
     {{content}}
 </div>
 <br />
 <br />
+{% if page.comments %}
 <div class="container justify-content-center">
     <div class="col-md-8 offset-md-2">
         <section id="isso-thread"></section>
     </div>
 </div>
+{% endif %}
