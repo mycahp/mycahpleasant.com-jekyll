@@ -1,18 +1,18 @@
-<div id="menu" class="container-fluid">
-    <div class="row mr-0">
-        <div class="col text-center">
+<div id="menu" class="container">
+    <div class="row mr-0 justify-content-center align-items-center text-center">
+        <div class="col">
             <a href="/">
                 <i class="fa fa-home" aria-hidden="true"></i>
             </a>
         </div>
-        <div class="col text-center">
+        <div class="col">
             <a href="/about">
                 <i class="fa fa-info-circle" aria-hidden="true"></i>
             </a>
         </div>
-        <div class="col text-center">
+        <div class="col">
             <a href="https://github.com/hacym">
-                <i class="fa fa-github" aria-hidden="true"></i>
+                <i class="fab fa-github" aria-hidden="true"></i>
             </a>
         </div>
         <!--
@@ -24,19 +24,33 @@
         -->
     </div>
 </div>
-<div id="header" class="container-fluid">
-    <div class="row">
-        <div id="name" class="container justify-content-center">
-            <div class="col-xs-auto my-auto text-center">
-                <h1>MYCAH</h1>
-            </div>
-            <div class="col-md-auto d-none d-md-block my-auto text-center">
-                <img src="/img/mycah-small.png" alt="MyCah Pleasant" id="portrait" style="width:: 102px; height: 132px;">
-            </div>
-            <div class="d-md-none">&nbsp;&nbsp;</div>
-            <div class="col-xs-auto my-auto text-center">
-                <h1>PLEASANT</h1>
+{% if page.layout != 'post' %}
+    <div id="header" class="container-fluid">
+        <div id="name" class="row">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-6 col-sm-3 text-sm-right">
+                        <img src="/img/mycah-small.png" alt="MyCah Pleasant" id="portrait">
+                    </div>
+                    <div class="col-12 col-sm-4 text-center" id="name">
+                        <h1>MyCah Pleasant</h1>
+                        <p>Commentary on the life of a software engineer</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+{% else %}
+    <div id="header" class="container-fluid">
+        <div id="name" class="row" style="margin-top: 25px;">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-12 text-center" id="name">
+                        <h1>MyCah Pleasant</h1>
+                        <p>Commentary on the life of a software engineer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}

@@ -6,14 +6,22 @@ title: Software Developer and Technology Enthusiast
 <div class="container justify-content-center">
     <div class="col-10 offset-1">
         {% for post in paginator.posts %}
-            <div class="row">
-                <div class="col-md-8 col-xs-12 text-md-left text-sm-center text-center">
+            <div class="row justify-content-between align-items-center">
+                <div class="post-date align-items-center col-2">
+                    <div>
+                        {{ post.date | date: '%b' }}
+                    </div>
+                    <h4 class="mb-0 font-weight-bold">
+                        {{ post.date | date: '%d' }}
+                    </h4>
+                    <div>
+                        {{ post.date | date: '%Y' }}
+                    </div>
+                </div>
+                <div class="col-9 col-sm-10 col-offset-1">
                     <h5>
                         <a href="{{post.url}}" style="text-decoration: underline;">{{post.title}}</a> 
                     </h5>
-                </div>
-                <div class="col-md-3 offset-md-1 col-xs-12 text-md-right text-sm-center text-center">
-                    {{ post.date | date: '%B %d, %Y' }}
                 </div>
             </div>
             <br />

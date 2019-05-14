@@ -18,7 +18,7 @@ Unsatisfied with my current set of educational credentials, I considered what I 
 
 I wasn't surprised when I found that there aren’t many programs that met my needs. Because I already had a Bachelor’s degree from UF, I was ineligible to pursue another four-year degree there. Offerings from other universities were sparse -- most online programs were too expensive or were from schools of questionable quality. There were certificates and nano degrees, but I eliminated those because the allure of saying I had a degree in computer science was too much.
 
-I was about to give up and pursue my a back-up program in Information Technology. It was then that I stumbled upon a very interesting graduate program from Georgia Tech, that was:
+I was about to give up and pursue a back-up program in Information Technology. It was then that I stumbled upon a very interesting graduate program from Georgia Tech, that was:
 
 - Online and accessible (and designed completely for students that had full-time jobs already)
 - Affordable ($8000 for the entire program, compared to up to $3000 *a semester* that some schools were asking for)
@@ -71,7 +71,7 @@ For exams, you’re proctored using software that watches you and your screen as
 
 ### The community is important for the class
 
-Classes use Canvas for assignments and grades and use Piazza for class discussions. Canvas is great, Piazza is not. Mostly, I’m not exactly sure what Pizza is trying to be. On its face, it’s a discussion forum where students can communicate with professors, TAs, and other students. However, they've tried to mix in some sort of poorly designed job board to it. I’m frequently asked to enter resume information they will share with potential employers. There is seemingly no way to turn this off.
+Classes use Canvas for assignments and grades and use Piazza for class discussions. Canvas is great, Piazza is not. Mostly, I’m not exactly sure what Piazza is trying to be. On its face, it’s a discussion forum where students can communicate with professors, TAs, and other students. However, they've tried to mix in some sort of poorly designed job board to it. I’m frequently asked to enter resume information they will share with potential employers. There is seemingly no way to turn this off.
 
 Piazza is also very hard to search. TAs try to police the posts by asking students to search before posting duplicate questions, but, finding relevant information through the search functionality is almost impossible. Some classes also tie the time you spend on Piazza to a participation grade, which I find a lame way to determine how engaged someone was during the course. Maybe they don’t like using Piazza?
 

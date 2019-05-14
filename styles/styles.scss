@@ -14,7 +14,9 @@
 
 body {
     font-family: 'Arvo', serif;
-    color: #333;
+    color: #3d3d3f;
+    background-color: #f6f5f3;
+    background-image: url(/img/debut-light.png);
     //border-top: 5px solid #345D86;
 }
 
@@ -24,7 +26,7 @@ img {
 }
 
 h1, h2, h3 {
-    color: #365E85;
+    color: #579067;
 }
 
 p {
@@ -46,22 +48,39 @@ a {
 
 #name {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 #name h1 {
     font-size: 2em;
-    color: #333;
+    color: #3d3d3f;
+}
+
+#name p {
+    color: #579067;
+}
+
+.post-date {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-date h4 {
+    color: #579067;
 }
 
 #menu {
-    background-color:  #345D86;
-    color: white;
+    //background-color:  #345D86;
     padding: 8px;
 }
 
 #menu a {
-    color: white;
+    color: #579067;
+    opacity: .5;
+}
+
+#menu a:hover {
+    opacity: 1;
 }
 
 #content {
@@ -89,7 +108,7 @@ a {
     padding-top: 4px;
     padding-right: 8px;
     padding-left: 3px;
-    color: #365E85;
+    color: #579067;
 }
 
 .fade-in {
@@ -100,3 +119,6 @@ a {
     background-color: #365E85;
 }
 
+#heart {
+    color: #bd8c7d;
+}
