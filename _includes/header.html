@@ -1,53 +1,29 @@
-<div id="menu" class="container">
-    <div class="row mr-0 justify-content-center align-items-center text-center">
-        <div class="col">
-            <a href="/">
-                <i class="fa fa-home" aria-hidden="true"></i>
-            </a>
-        </div>
-        <div class="col">
-            <a href="/about">
-                <i class="fa fa-info-circle" aria-hidden="true"></i>
-            </a>
-        </div>
-        <div class="col">
-            <a href="https://github.com/hacym">
-                <i class="fab fa-github" aria-hidden="true"></i>
-            </a>
-        </div>
-        <!--
-        <div class="col text-center">
-            <a href="/podcasts">
-                <i class="fa fa-headphones" aria-hidden="true"></i>
-            </a>
-        </div>
-        -->
-    </div>
-</div>
 {% if page.layout != 'post' %}
-    <div id="header" class="container-fluid">
+    <div id="header-sm" class="container-fluid">
+        {% include menu.html %}
         <div id="name" class="row">
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-6 col-sm-3 text-sm-right">
-                        <img src="/img/mycah-small.png" alt="MyCah Pleasant" id="portrait">
+                        <img src="/img/mycah-small.png" alt="MyCah Pleasant" id="portrait" class="animated fadeIn">
                     </div>
                     <div class="col-12 col-sm-4 text-center" id="name">
-                        <h1>MyCah Pleasant</h1>
-                        <p>Commentary on the life of a software engineer</p>
+                        <h1>MyCah Pleasant's</h1>
+                        <h3>commentary on a life in technology</h3>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 {% else %}
-    <div id="header" class="container-fluid">
+    <div id="header-sm" class="container-fluid">
+        {% include menu.html %}
         <div id="name" class="row" style="margin-top: 25px;">
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-12 text-center" id="name">
-                        <h1>MyCah Pleasant</h1>
-                        <p>Commentary on the life of a software engineer</p>
+                        <h1>MyCah Pleasant's</h1>
+                        <h3>commentary on a life in technology</h3>
                     </div>
                 </div>
             </div>

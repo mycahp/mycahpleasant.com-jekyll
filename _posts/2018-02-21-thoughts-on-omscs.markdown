@@ -9,8 +9,7 @@ comments: true
 show_author: true
 ---
 
-![img](/img/2018-02-21-thoughts-on-omscs/tower.jpg)
-<br />
+<img class="cover-image animated fadeIn" src="/img/2018-02-21-thoughts-on-omscs/tower.jpg">
 
 <span class="first-letter">I</span>n the Fall of 2017, my educational career was at a crossroads. Four and a half years removed from graduating from the University of Florida with my fairly useless Liberal Arts degree, I was finishing up supplementary coursework in software development at a state college and working as an entry-level software developer for my alma mater. 
 

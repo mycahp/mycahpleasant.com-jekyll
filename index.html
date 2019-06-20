@@ -1,20 +1,20 @@
 ---
 layout: main
-title: Software Developer and Technology Enthusiast
+title: Commentary on a Life in Technology
 ---
 
 <div class="container justify-content-center">
     <div class="col-10 offset-1">
         {% for post in paginator.posts %}
             <div class="row justify-content-between align-items-center">
-                <div class="post-date align-items-center col-2">
-                    <div>
+                <div class="post-date col-sm-2 col-1">
+                    <div class="month text-center">
                         {{ post.date | date: '%b' }}
                     </div>
-                    <h4 class="mb-0 font-weight-bold">
+                    <h4 class="mb-0 font-weight-bold text-center day">
                         {{ post.date | date: '%d' }}
                     </h4>
-                    <div>
+                    <div class="year text-center">
                         {{ post.date | date: '%Y' }}
                     </div>
                 </div>
