@@ -75,29 +75,13 @@ a {
 
 .post-date {
     display: grid;
+    color: #589067;
+    padding-right: 20px;
 }
 
-.post-date .day {
-    color: #579067;
-    padding: 3px;
-    border-left: 1px dashed #579067;
-    border-right: 1px dashed #579067;
-    background-color: #f6f5f3;
-}
-
-.post-date .month {
-    background-color: #579067;
-    padding: 3px;
-    color: #FFF;
-    border-radius: 5px 5px 0px 0px;
-}
-
-.post-date .year {
-    font-size: 10px;
-    padding: 3px;
-    background-color: #579067;
-    color: #FFF;
-    border-radius: 0px 0px 5px 5px;
+.post-title {
+    padding-left: 20px;
+    border-left: 1px solid #D6D5D3;
 }
 
 #menu {
