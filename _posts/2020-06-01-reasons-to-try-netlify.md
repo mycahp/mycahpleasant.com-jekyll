@@ -20,6 +20,7 @@ Cheap virtual private servers like the ones you can find on LowEndBox are great.
 My current VPS hosts my website and several playgrounds for things I was experimenting with at one point or another.
 
 There are a few problems with this approach, especially for a basic web app. Most importantly is the overhead. You have to worry about OS and package updates, renewing your SSL certs, and setting up security. At the application level, you also have to worry about environments, packages, and dependencies for anything you build. Containerization can help with this, but again, the overhead concerns.
+
 What was I doing with all that overhead? Not much. The number of resources I was using was tiny compared to what I was paying. While $10 a month isn't a huge expense, when you are using less than 1% of the resources per month, it isn't money well spent. Combine that with some billing issues with your VPS provider, and you start to question if it makes sense to continue making payments for such a small amount of resources.
 
 And, personally, it just didn't make the development process much fun to deal with - when I would go to do something, I would get bogged down in the details of the server, and wouldn't make much progress. And there's an argument to be made for having a separation of concerns. Should I be doing active development and research on the same server that is supposed to be serving the "production" version of the website? Probably not.
