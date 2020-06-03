@@ -5,7 +5,6 @@ date:   2019-02-21 22:33:30 -0400
 author: "MyCah Pleasant"
 category: "Education"
 tags: ['Georgia Tech', 'OMSCS', 'Computer Science']
-comments: true
 show_author: true
 ---
 
