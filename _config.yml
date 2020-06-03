@@ -38,6 +38,7 @@ plugins:
   - jekyll-paginate
 
 highlighter: rouge
+timezone: America/New_York
 
 
 # Exclude from processing.
