@@ -6,8 +6,7 @@ title: Commentary on a Life in Technology
 <div class="container justify-content-center">
     <div class="justify-content-center d-flex flex-column">
         {% for post in paginator.posts %}
-
-            <div class="d-flex flex-column align-items-center justify-content-center mb-3">
+            <div class="d-flex flex-column justify-content-center mb-3">
                 <h5>
                     <span class="post-date">{{ post.date | date: '%b %d, %Y' }}</span>
                     <a href="{{post.url}}" style="text-decoration: underline;">{{post.title}}</a> 
