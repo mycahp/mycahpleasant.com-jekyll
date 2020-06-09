@@ -7,8 +7,7 @@ category: "Software Development"
 tags: ['Netlify', 'JavaScript', 'Jekyll']
 show_author: true
 ---
-
-<span class="first-letter">T</span>he market for web hosting is weird.
+The market for web hosting is weird.
 
 Just a few years ago, shared hosting for static files, PHP-based projects, or other basic web applications was popular. You could do one-click installs of WordPress, and have a blog up and running in just a few minutes.
 As PHP began its decline in popularity, though, so did basic hosting. A simple Apache server with a PHP install was no longer all you needed to run an application. Instead, that Apache server is now just a reverse proxy to a Node.JS process running an Express-based application.
