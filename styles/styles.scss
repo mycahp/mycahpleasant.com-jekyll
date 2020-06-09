@@ -20,13 +20,12 @@ body {
     --primary-dark-grey: #302E2b;
     --accent-red: #e30b5d;
 
-    font-family: 'Arvo', serif;
+    font-family: 'Titillium Web', sans-serif;
+
     color: var(--primary-dark-grey);
     background-color: #f6f5f3;
     //background-image: url(/img/debut-light.png);
     //border-top: 5px solid #345D86;
-
-
 }
 
 html {
@@ -65,6 +64,10 @@ h3 {
     }
 }
 
+h3 {
+    font-family: 'Arvo', serif;
+}
+
 p {
     line-height: 1.66em;
     font-size: 1.1rem;
@@ -97,17 +100,24 @@ a {
 #name {
     display: flex;
     flex-direction: column;
+    margin: 20px 0;
 }
 
 #name h1 {
-    font-size: 2em;
+    font-size: 4em;
     color: var(--primary-dark-grey);
-    font-weight: bold;
+    font-family: 'Yellowtail', cursive;
+    transform: rotate(-5deg);
+    color: var(--primary-green);
+
+    &.no-tilt {
+        transform: none;
+    }
 }
 
-#name p {
-    color: var(--primary-green);
-    font-style: italic;
+#name h3 {
+    color: var(--primary-dark-grey);
+    font-family: 'Arvo', serif;
 }
 
 .post-date {
@@ -120,6 +130,8 @@ a {
     border-left: 1px solid var(--primary-dark-grey);
     line-height: 1.5em;
     color: var(--primary-blue);
+    font-weight: bold;
+    font-family: 'Arvo', serif;
 }
 
 #menu {
@@ -152,6 +164,8 @@ a {
 #title {
     color: var(--accent-red);
     text-decoration: underline;
+    font-weight: bold;
+    font-family: 'Arvo', serif;
 }
 
 
