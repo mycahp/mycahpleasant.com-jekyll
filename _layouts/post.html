@@ -1,25 +1,13 @@
 ---
 layout: main
 ---
-<div class="text-center col-md-8 offset-md-2 col-lg-10 offset-lg-1">
-    <h2 id="title">{{page.title}}</h2>
-    <!--
-    {% if page.show_author %}
-        <p>Posted on {{ page.date | date: '%B %d, %Y' }} by {{page.author}} under {{page.category}} and tagged as {{page.tags | join: ', '}}.</p>
-    {% endif %}
-    -->
-    <p>{{ page.date | date: '%B %d, %Y' }}</p>
+<div id="post-title-container" class="flex-lg-row col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+    <div id="title-text" class="col-lg-9 p-0">
+        <h2 id="title">{{page.title}}</h2>
+    </div>
+    <p id="post-date" class="mb-0 pl-0 col-lg-2 offset-lg-1 text-lg-right">{{ page.date | date: '%B %d, %Y' }}</p>
 </div>
 <br />
-<div class="col-sm-12 col-md-8 offset-md-2">
+<div class="col-sm-12 col-md-10 offset-md-1">
     {{content}}
 </div>
-<br />
-<br />
-{% if page.comments %}
-<div class="container justify-content-center">
-    <div class="col-md-8 offset-md-2">
-        <section id="isso-thread"></section>
-    </div>
-</div>
-{% endif %}

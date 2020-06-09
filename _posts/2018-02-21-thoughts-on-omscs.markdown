@@ -10,7 +10,7 @@ show_author: true
 
 <img class="cover-image animated fadeIn" src="/img/2018-02-21-thoughts-on-omscs/tower.jpg">
 
-<span class="first-letter">I</span>n the Fall of 2017, my educational career was at a crossroads. Four and a half years removed from graduating from the University of Florida with my fairly useless Liberal Arts degree, I was finishing up supplementary coursework in software development at a state college and working as an entry-level software developer for my alma mater. 
+In the Fall of 2017, my educational career was at a crossroads. Four and a half years removed from graduating from the University of Florida with my fairly useless Liberal Arts degree, I was finishing up supplementary coursework in software development at a state college and working as an entry-level software developer for my alma mater. 
 
 Unsatisfied with my current set of educational credentials, I considered what I wanted to do next. Ideally, I wanted to find a reputable computer science program that fit into my work schedule. A big ask, possibly, especially for someone without a science or engineering background.
 
