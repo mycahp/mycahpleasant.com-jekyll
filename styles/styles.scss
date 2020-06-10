@@ -136,7 +136,8 @@ a {
     .post-date {
         flex-basis: 125px;
         flex-grow: 0;
-        padding-right: 10px;   
+        padding-right: 10px;
+        align-self: center;
     }
 
     .post-title {
