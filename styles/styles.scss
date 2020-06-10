@@ -129,13 +129,25 @@ a {
     padding-right: 5px;
 }
 
-.post-title {
-    padding-left: 10px;
-    border-left: 1px solid var(--primary-dark-grey);
-    line-height: 1.5em;
-    color: var(--primary-blue);
-    font-weight: bold;
-    font-family: 'Arvo', serif;
+#post-title-grid {
+    display: flex;
+    flex-direction: row;
+
+    .post-date {
+        flex-basis: 125px;
+        flex-grow: 0;
+        padding-right: 10px;   
+    }
+
+    .post-title {
+        flex: 1;
+        padding-left: 10px;
+        border-left: 1px solid var(--primary-dark-grey);
+        line-height: 1.5em;
+        color: var(--primary-blue);
+        font-weight: bold;
+        font-family: 'Arvo', serif;
+    }
 }
 
 #menu {
