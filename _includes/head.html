@@ -32,16 +32,16 @@
 
         if (darkMode) {
             $('body').addClass('dark');
-            $("#portrait").attr('src', '/img/mycah-dark.svg');
+            $("#portrait").attr('src', '/img/mycah-dark.png');
         }
-
+                                             
         $("#change-mode").click(function() {
             if ($('body').hasClass('dark')) {
-                $("#portrait").attr('src', '/img/mycah.svg');
+                $("#portrait").attr('src', '/img/mycah.png');
                 $('body').removeClass('dark');
                 localStorage.setItem("darkMode", false);
             } else {
-                $("#portrait").attr('src', '/img/mycah-dark.svg');
+                $("#portrait").attr('src', '/img/mycah-dark.png');
                 $('body').addClass('dark');
                 localStorage.setItem("darkMode", true);
             }
