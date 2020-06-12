@@ -22,14 +22,32 @@ body {
 
     font-family: 'Titillium Web', sans-serif;
 
-    color: var(--primary-dark-grey);
     background-color: #f6f5f3;
-    //background-image: url(/img/debut-light.png);
-    //border-top: 5px solid #345D86;
+
+    --text-color: var(--primary-dark-grey);
+    --menu-bg: var(--off-white);
+    --border-color: var(--primary-dark-grey);
+    --caption-color: var(--primary-dark-grey);
+
+    &.dark {
+        background-color: var(--primary-dark-grey);
+
+        --text-color: var(--off-white);
+        --menu-bg: var(--primary-dark-grey);
+        --border-color: var(--off-white);
+        --caption-color: var(--off-white);
+    }
+
+    color: var(--text-color);
+
 }
 
 html {
     overflow-y: scroll;
+}
+
+hr {
+    border-top: 1px solid var(--border-color);
 }
 
 img {
@@ -50,7 +68,8 @@ figure {
     figcaption {
         text-align: center;
         padding: 15px 0;
-        border-bottom: 1px solid var(--primary-dark-grey);
+        border-bottom: 1px solid var(--border-color);
+        color: var(--caption-color) !important;
     }
 }
 
@@ -105,18 +124,22 @@ a {
 
 #name h1 {
     font-size: 4em;
-    color: var(--primary-dark-grey);
     font-family: 'Yellowtail', cursive;
-    transform: rotate(-5deg);
+    transform: none;
     color: var(--primary-green);
 
     &.no-tilt {
         transform: none;
     }
+
+    @media (min-width: 768px) { 
+        transform: rotate(-5deg);
+    }
+
 }
 
 #name h3 {
-    color: var(--primary-dark-grey);
+    color: var(--text-color);
     font-family: 'Arvo', serif;
 }
 
@@ -138,12 +161,17 @@ a {
         flex-grow: 0;
         padding-right: 10px;
         align-self: center;
+
+        @media (max-width: 767.98px) {
+            flex-basis: 75px;
+            padding-right: 0px;
+        }
     }
 
     .post-title {
         flex: 1;
         padding-left: 10px;
-        border-left: 1px solid var(--primary-dark-grey);
+        border-left: 1px solid var(--border-color);
         line-height: 1.5em;
         color: var(--primary-blue);
         font-weight: bold;
@@ -154,9 +182,9 @@ a {
 #menu {
     padding: 8px;
 
-    &.grey-bg {
-        background-color: #f6f5f3;
-        border-bottom: 1px solid #579067;
+    &.sticky {
+        background-color: var(--menu-bg);
+        border-bottom: 1px solid var(--primary-green);
     }
 }
 
@@ -178,6 +206,11 @@ a {
     padding-bottom: 100px;
 }
 
+#change-mode {
+    padding-left: 5px;
+    cursor: pointer;
+}
+
 #title {
     color: var(--accent-red);
     text-decoration: underline;
@@ -188,16 +221,6 @@ a {
 
 .post-action {
     padding: 5px 0px 0px 0px;
-}
-
-.first-letter {
-    float: left;
-    font-size: 60px;
-    line-height: 45px;
-    padding-top: 4px;
-    padding-right: 8px;
-    padding-left: 3px;
-    color: #579067;
 }
 
 .fade-in {
