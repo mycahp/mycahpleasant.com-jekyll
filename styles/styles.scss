@@ -1,45 +1,52 @@
---- 
---- 
+---
+---
 
-@media (max-width: 575.98px) {
-    #name {
-        margin-top: 25px;
-    }
-}
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Shadows+Into+Light&display=swap");
 
-@media (max-width: 767.98px) {
-    #name {
-        margin-top: 25px;
-    }
+:root {
+    --red: #ef6461;
+    --light-blue: #3f8efc;
+    --dark-blue: #0244a2;
+    --gray: #424651;
+    --purple: #9779af;
+    --white: #fff;
+    --off-white: #efe9e7;
+
+    --serif-font: "Martel", serif;
+    --sans-serif-font: "Roboto", sans-serif;
+    --handwriting-font: "Shadows Into Light", cursive;
 }
 
 body {
-    --off-white: #F6f6f3;
-    --primary-green: #579067;
-    --primary-blue: #1282A3;
-    --primary-dark-grey: #302E2b;
-    --accent-red: #e30b5d;
+    // --off-white: #f6f6f3;
+    // --primary-green: #579067;
+    // --primary-blue: #1282a3;
+    // --primary-dark-grey: #302e2b;
+    // --accent-red: #e30b5d;
 
-    font-family: 'Titillium Web', sans-serif;
-
-    background-color: #f6f5f3;
-
-    --text-color: var(--primary-dark-grey);
+    --text-color: var(--gray);
     --menu-bg: var(--off-white);
-    --border-color: var(--primary-dark-grey);
-    --caption-color: var(--primary-dark-grey);
+    --border-color: var(--gray);
+    --caption-color: var(--gray);
+    --link-color: var(--light-blue);
+    --link-color-hover: var(--dark-blue);
+
+    font-family: var(--sans-serif-font);
+
+    background-color: var(--off-white);
 
     &.dark {
-        background-color: var(--primary-dark-grey);
-
+        background-color: var(--gray);
         --text-color: var(--off-white);
-        --menu-bg: var(--primary-dark-grey);
+
+        --menu-bg: var(--gray);
         --border-color: var(--off-white);
         --caption-color: var(--off-white);
+        --link-color: var(--white);
+        --link-color-hover: var(--light-blue);
     }
 
     color: var(--text-color);
-
 }
 
 html {
@@ -76,7 +83,7 @@ figure {
 h1,
 h2,
 h3 {
-    color: var(--accent-red);
+    color: var(--red);
 
     &.green {
         color: var(--primary-green);
@@ -84,19 +91,14 @@ h3 {
 }
 
 h3 {
-    font-family: 'Arvo', serif;
+    font-family: var(--sans-serif-font);
 }
 
 p {
     line-height: 1.66em;
     font-size: 1.1rem;
     margin-bottom: 25px;
-    letter-spacing: .5px;
-}
-
-a {
-    text-decoration: underline;
-    color: var(--primary-blue);
+    letter-spacing: 0.5px;
 }
 
 #post-title-container {
@@ -120,27 +122,26 @@ a {
     display: flex;
     flex-direction: column;
     margin: 20px 0;
+
+    @media (max-width: 575.98px) {
+        margin-top: 25px;
+    }
+
+    @media (max-width: 767.98px) {
+        margin-top: 25px;
+    }
 }
 
 #name h1 {
-    font-size: 4em;
-    font-family: 'Yellowtail', cursive;
+    font-size: 5em;
+    font-family: var(--handwriting-font);
     transform: none;
     color: var(--primary-green);
-
-    &.no-tilt {
-        transform: none;
-    }
-
-    @media (min-width: 768px) { 
-        transform: rotate(-5deg);
-    }
-
 }
 
 #name h3 {
     color: var(--text-color);
-    font-family: 'Arvo', serif;
+    font-family: "Arvo", serif;
 }
 
 #portrait {
@@ -149,7 +150,7 @@ a {
 }
 
 .post-date {
-    color: var(--accent-red);
+    color: var(--red);
     padding-right: 5px;
 }
 
@@ -158,25 +159,45 @@ a {
     flex-direction: row;
 
     .post-date {
-        flex-basis: 125px;
-        flex-grow: 0;
-        padding-right: 10px;
         align-self: center;
+
+        i {
+            padding: 0 10px;
+        }
 
         @media (max-width: 767.98px) {
             flex-basis: 75px;
             padding-right: 0px;
+
+            i {
+                display: none;
+            }
         }
     }
 
     .post-title {
         flex: 1;
-        padding-left: 10px;
-        border-left: 1px solid var(--border-color);
+        // border-left: 1px solid var(--border-color);
         line-height: 1.5em;
-        color: var(--primary-blue);
         font-weight: bold;
-        font-family: 'Arvo', serif;
+        font-family: var(--serif-font);
+    }
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: underline;
+
+    &:active {
+        color: var(--link-color);
+    }
+
+    &:hover {
+        color: var(--link-color-hover);
+    }
+
+    &:visited {
+        color: var(--purple);
     }
 }
 
@@ -185,13 +206,13 @@ a {
 
     &.sticky {
         background-color: var(--menu-bg);
-        border-bottom: 1px solid var(--primary-green);
+        border-bottom: 1px solid var(--red);
     }
 }
 
 #menu a {
-    color: #579067;
-    opacity: .5;
+    color: var(--red);
+    opacity: 0.5;
 }
 
 #menu a:hover {
@@ -213,12 +234,11 @@ a {
 }
 
 #title {
-    color: var(--accent-red);
+    color: var(--red);
     text-decoration: underline;
     font-weight: bold;
-    font-family: 'Arvo', serif;
+    font-family: var(--serif-font);
 }
-
 
 .post-action {
     padding: 5px 0px 0px 0px;
@@ -229,9 +249,9 @@ a {
 }
 
 .btn-primary {
-    background-color: #365E85;
+    background-color: #365e85;
 }
 
 #heart {
-    color: var(--accent-red);
+    color: var(--red);
 }

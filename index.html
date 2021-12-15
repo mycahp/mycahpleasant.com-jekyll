@@ -6,21 +6,23 @@ title: Commentary on a Life in Technology
 <div class="container justify-content-center">
     <div class="col-md-8 offset-md-2">
         {% for post in paginator.posts %}
-            <div class="d-flex flex-column justify-content-center mb-3">
-                <h5 id="post-title-grid">
-                    <span class="post-date">{{ post.date | date: '%b %d, %Y' }}</span>
-                    <a href="{{post.url}}" class="post-title">{{post.title}}</a> 
-                </h5>
-            </div>
+        <div class="d-flex flex-column justify-content-center mb-0">
+            <h5 id="post-title-grid">
+                <span class="post-date">{{ post.date | date: '%b %d, %Y' }}
+                    <i class="fas fa-angle-double-right"></i>
+                </span>
+                <a href="{{post.url}}" class="post-title">{{post.title}}</a>
+            </h5>
+        </div>
         {% endfor %}
     </div>
 </div>
 
 <nav class="pagination" role="navigation" aria-label="pagination">
     {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="pagination-previous">Previous</a>
+    <a href="{{ paginator.previous_page_path }}" class="pagination-previous">Previous</a>
     {% endif %}
     {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="pagination-next">Next</a>
+    <a href="{{ paginator.next_page_path }}" class="pagination-next">Next</a>
     {% endif %}
 </nav>
