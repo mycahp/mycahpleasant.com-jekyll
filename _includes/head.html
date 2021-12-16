@@ -23,10 +23,12 @@
 <script>
     $(document).ready(function() {
         $(window).scroll(function() {
-            if ($(window).scrollTop() > $('#header-sm').offset().top + $('#header-sm').height()) {
-                $('#menu').addClass('fixed-top sticky animated slideInDown').removeClass('container');
+            if ($(window).scrollTop() > $('#header').offset().top + $('#header').height()) {
+                $('#menu').addClass('fixed-top sticky animate__animated animate__slideInDown').removeClass('container');
+                $('#main-content').addClass('add-top-margin');
             } else {
-                $('#menu').removeClass('fixed-top sticky animated slideInDown').addClass('container');
+                $('#menu').removeClass('fixed-top sticky animate__animated animate__slideInDown').addClass('container');
+                $('#main-content').removeClass('add-top-margin');
             }
         });
 
