@@ -1,32 +1,7 @@
-{% if page.layout != 'post' %}
-    <div id="header-sm" class="container-fluid">
-        {% include menu.html %}
-        <div id="name" class="row">
-            <div class="container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-6 col-sm-3 text-sm-rig d-none d-sm-none d-md-block d-lg-block d-xl-block">
-                        <img src="/img/mycah.png" alt="MyCah Pleasant" id="portrait" class="animated fadeIn">
-                    </div>
-                    <div class="col-12 col-sm-4 offset-sm-1 offset-md-0 text-center align-items-center" id="name">
-                        <h1>MyCah Pleasant's</h1>
-                        <h3 class="green">commentary on a life in technology</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
+<header id="header">
+    {% include menu.html %}
+    <div class="container">
+        <h1 class="site-name">mycah<img class="animated fadeIn mycah-face" src="/img/mycah-caricature-color.svg">io
+        </h1>
     </div>
-{% else %}
-    <div id="header-sm" class="container-fluid">
-        {% include menu.html %}
-        <div id="name" class="row">
-            <div class="container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-12 text-center" id="name">
-                        <h1 class="no-tilt">MyCah Pleasant's</h1>
-                        <h3 class="green">commentary on a life in technology</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-{% endif %}
+</header>
